@@ -11,3 +11,11 @@ Using Retrieval Augmented Generation, the research assistant is able to fetch re
 - Retriever: Tavily API to do web search and retrieve external knowledge. The information retrieved is processed and formatted. 
 - Context Generation: The retrieved information is passed into the chosen LLM model to 'augment' its prompt and update its running summary. Any detected gaps are filled using follow-up queries equal to the user configured research iterations.
 - Generator Output: The Ollama hosted model reads the context and generates a final answer.
+
+## Document Reviewer Agent
+This agent is built using LangGraph, LangChain and Ollama and is designed to automatically review text documents locally. 
+The key components of this workflow are:
+
+-Loading a txt document
+-Section splitting based on paragraphs
+-For each section, it asks the LLM to summarize and review it based on grammar, clarity and structure
