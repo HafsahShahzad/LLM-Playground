@@ -16,6 +16,6 @@ Using Retrieval Augmented Generation, the research assistant is able to fetch re
 This agent is built using LangGraph, LangChain and Ollama and is designed to automatically review text documents locally. 
 The key components of this workflow are:
 
--Loading a txt document
--Section splitting based on paragraphs
--For each section, it asks the LLM to summarize and review it based on grammar, clarity and structure
+- Loading a txt document
+- Section splitting based on paragraphs
+- For each section, it asks the LLM to summarize and review it based on grammar, clarity and structure
